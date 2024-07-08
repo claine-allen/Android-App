@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#4CAF50">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="71dp"
+            android:layout_height="68dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/steel_zest_logo_color" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Our Services"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent"
+
+        app:layoutDescription="@xml/activity_services_xml_child_scene">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ad1"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="338dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="232dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.309"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ad3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="337dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ad2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="192dp"
+            android:layout_height="134dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="213dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="209dp"
+            android:layout_marginBottom="125dp"
+            android:src="@drawable/fabrication2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="192dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="213dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/solar" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="203dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="158dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/heater" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="At Steelzest Engineers we ensure the highest quality of job satisfaction to our customers in our services which includes:\n\n
+       Maintenance,Installation and Supply \n 1. Solar PV Systems \n 2. Solar Water Heaters \n 3. Solar Lights \n\n      We also specialise in fabrication works
+\n
+1. House Roofings \n 2. Partition Works \n 3. Metal Gates \n 4. Grills \n 5. Heavy Industrial Fabrications"
+        android:textSize="16dp" />
+
+</RelativeLayout>
