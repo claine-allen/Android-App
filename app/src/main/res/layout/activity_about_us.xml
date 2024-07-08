@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="71dp"
+            android:layout_height="68dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/steel_zest_logo_color" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="174dp"
+            android:layout_height="55dp"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="About Us"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/child"
+        android:layout_width="match_parent"
+        android:layout_height="2in"
+        android:layout_below="@id/parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="251dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginBottom="175dp"
+            android:src="@drawable/fabrication"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fabrication" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="186dp"
+            android:layout_height="118dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="216dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/solar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="214dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="197dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fab" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="136dp"
+            android:layout_height="105dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sol" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Steel Zest Engineers started its journey in July 2019 and added a feather of Solar System Integration on our cap in the year 2020.
+We are working with a vision of 2030 wherein our goal is to achieve Solar on every rooftop in the state of Goa."
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+</RelativeLayout>
